@@ -5,7 +5,7 @@
 #define stableLED 5
 #define fireLED 6
 
-SoftwareSerial BTSerial(10, 11); //arduinoRX, arduino TX
+SoftwareSerial BTSerial(10, 11); //arduino RX pin, arduino TX pin
 
 bool fireDetected = false;  // To track if the fire was previously detected
 
@@ -36,22 +36,19 @@ void loop() {
     BTSerial.println("Fire! Fire!");
 
     // Beeping and LED flashing (continuous while fire is present)
-    digitalWrite(stableLED, LOW);   // Peace LED off
+    digitalWrite(stableLED, LOW);   // Stable LED off
   }
 
   if (fireDetected) {  // If fire was detected, keep beeping and flashing
-          // Send 1KHz sound
-    digitalWrite(fireLED, HIGH);  // Turn fire LED on
+    
     Serial.println("Fire! Fire!");
     BTSerial.println("Fire! Fire!");
+    digitalWrite(fireLED, HIGH); 
     tone(buzzer, 1000); 
-    delay(100);              // Wait 100 ms
-
-    noTone(buzzer);          // Turn buzzer off
-    digitalWrite(fireLED, LOW);  // Turn fire LED off
-    //Serial.println("Fire! Fire!");
-   // BTSerial.println("Fire! Fire!");
-    delay(100);              // Pause 100 ms before next beep
+    delay(100);         
+    noTone(buzzer);     
+    digitalWrite(fireLED, LOW);
+    delay(100);              
   }
 
   if (fire == HIGH && fireDetected) {  // Fire gone, state change
@@ -65,11 +62,8 @@ void loop() {
     }
     Serial.println("-");
     BTSerial.println("-");
-    //Serial.println("-----------------------------------");
-    //BTSerial.println("------------------------------------");
-    // Print peace message once
+
     Serial.println("Environment is Stable");
-    //Serial.println(analogRead(A0));
     BTSerial.println("Environment is Stable");
 
     digitalWrite(stableLED, HIGH);  // Peace LED on
