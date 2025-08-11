@@ -28,7 +28,7 @@ A fire detection system designed to provide immediate alerts in the event of a f
 ## Schematic Diagram:
 
 You can find an interactive version of the schematic here. Developed this using CirkitDesigner <sup>TM</sup> <br>
-[Pyrosafe Schematic]([https://app.cirkitdesigner.com/project/25f5dbe2-e3fa-4537-9047-c97edf9c66f3](https://app.cirkitdesigner.com/project/060dcd9b-d98c-4138-b56c-e75955ac65cd))
+[Pyrosafe Schematic](https://app.cirkitdesigner.com/project/060dcd9b-d98c-4138-b56c-e75955ac65cd)
 
 
 *A voltage divider was used across the RXD pin of the module to reduce the 5V output from the Arduino down to around 4.09V, protecting the module from possible damage associated with long-term use.
