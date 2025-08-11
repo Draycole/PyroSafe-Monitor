@@ -31,4 +31,4 @@ You can find an interactive version of the schematic here. Developed this using 
 [Pyrosafe Schematic](https://app.cirkitdesigner.com/project/060dcd9b-d98c-4138-b56c-e75955ac65cd)
 
 
-*A voltage divider was used across the RXD pin of the module to reduce the 5V output from the Arduino down to around 4.09V, protecting the module from possible damage associated with long-term use.
+*I used a voltage divider across the RXD pin of the module to reduce the 5V output from the Arduino down to around 4.09V, protecting it from possible damage associated with long-term use.
