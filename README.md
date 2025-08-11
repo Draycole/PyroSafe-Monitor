@@ -22,8 +22,13 @@ A fire detection system designed to provide immediate alerts in the event of a f
 - A flame sensor is setup and refreshes every 200ms
 - A steady-state LED is on as long as no fire is detected
 - Once fire detected the boolean state is updated
-- 
+- The panic LED comes on and the buzzer tones repeatedly
+- The system sends a wireless notification to the connected bluetooth device.
+  
 ## Schematic Diagram:
-![Schematic Diagram for PyroSafe Monitor](schematics-pyrosafe-1.png)
 
-A voltage divider was used across the RXD pin of the module to reduce the 5V output from the Arduino down to around 4.09V, protecting the module from possible damage associated with long-term use.
+You can find an interactive version of the schematic here. Developed this using CirkitDesigner <sup>TM</sup> <br>
+[Pyrosafe Schematic]([https://app.cirkitdesigner.com/project/25f5dbe2-e3fa-4537-9047-c97edf9c66f3](https://app.cirkitdesigner.com/project/060dcd9b-d98c-4138-b56c-e75955ac65cd))
+
+
+*A voltage divider was used across the RXD pin of the module to reduce the 5V output from the Arduino down to around 4.09V, protecting the module from possible damage associated with long-term use.
