@@ -7,6 +7,16 @@ A fire detection system designed to provide immediate alerts in the event of a f
 - **Audio-visual alerts**
 - **Wireless Bluetoothe notifications**
 
+## Components Used
+
+- Arduino Uno
+- Flame Sensor Module
+- HC-05 Bluetooth Module
+- 10kΩ, 220Ω resistors
+- 1 Piezo Buzzer
+- LEDs (x2)
+- Breadboard, Jumper wires
+
 Schematic Diagram:
 ![Schematic Diagram for PyroSafe Monitor](schematics-pyrosafe-1.png)
 
