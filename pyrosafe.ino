@@ -5,9 +5,9 @@
 #define stableLED 5
 #define fireLED 6
 
-SoftwareSerial BTSerial(10, 11); //arduino RX pin, arduino TX pin
+SoftwareSerial BTSerial(10, 11); //Arduino RX, Arduino TX.
 
-bool fireDetected = false;  // To track if the fire was previously detected
+bool fireDetected = false;  // Bool variable to track if the fire was previously detected
 
 void setup() {
   Serial.begin(9600);
@@ -31,7 +31,7 @@ void loop() {
 
     Serial.println("");
     BTSerial.println("");
-    // Print fire message once
+    
     Serial.println("Fire! Fire!");
     BTSerial.println("Fire! Fire!");
 
@@ -71,5 +71,5 @@ void loop() {
     noTone(buzzer);                // Ensure buzzer is off
   }
 
-  delay(200);  // Short delay for responsiveness
+  delay(200); 
 }
