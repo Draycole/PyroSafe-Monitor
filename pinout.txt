@@ -19,5 +19,6 @@ fireLED
 Bluetooth Module
    Vcc
    GND
-   TXD
-   RXD
+   TXD - 10
+   RXD - 1
+
