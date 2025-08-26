@@ -15,3 +15,9 @@ stableLED
 fireLED
    Data - 6
    GND
+
+Bluetooth Module
+   Vcc
+   GND
+   TXD
+   RXD
