@@ -1,0 +1,16 @@
+Flame Sensor
+   A0 - A0
+   GND
+   Vcc
+   Data - 2
+
+Buzzer
+   Signal - 9
+   GND
+
+stableLED
+   Data - 5
+   GND
+
+fireLED
+   Data - 6
