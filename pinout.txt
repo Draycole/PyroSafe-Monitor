@@ -20,5 +20,4 @@ Bluetooth Module
    Vcc
    GND
    TXD - 10
-   RXD - 1
-
+   RXD - 11
